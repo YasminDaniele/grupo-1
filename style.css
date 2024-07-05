@@ -26,7 +26,6 @@
 .titulo-principal { 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: left;
     width: 100%;
@@ -91,6 +90,7 @@
     }
 .aba-conteudo-titulo-principal{ font-size: 28px;
         text-align: center;
+        color: #ffffff;
         }
 .aba-conteudo-titulo-secundario{ text-align: center;
         color: var(--verde); text-transform: uppercase;
