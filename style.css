@@ -4,7 +4,7 @@
     --branco:#ffffff;
     --botao-ativo:#A020F0;
     --botao-inativo:rgba(58, 55, 94, 0.5);
-    --texto-fundo:rgba(58, 55, 94, 0.3);
+    --texto-fundo:rgb(41, 15, 169);
 }
 
 .body{
@@ -24,6 +24,10 @@
 }
 
 .titulo-principal { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     width: 100%;
     font-size: 32px;
