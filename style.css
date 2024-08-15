@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
+:root{
     --cor-de-fundo: #000000;
-    --verde: #00FF7F;
-    --branco: #afffff;
+    --branco:  #00FF7F;
+    --ciano:  #afffff;
     --botao-ativo: #A020F0;
     --botao-inativo: rgb(58, 55, 94, 0.5);
     --texto-fundo: rgb(41, 15, 169);
 }
 
-body {
+body{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-    font-family: 'Jacquard 12', sans-serif;
+    font-style: italic;
+    font-family:  'Jacquard 12', sans-serif;
 }
 
-.conteudo-principal {
-    display: flex;
+.Conteudo-principal { display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@ body {
     margin: 0 auto;
 }
 
-.titulo-principal {
+.titulo-principal { text-align: left;
     text-align: left;
     width: 100%;
     font-size: 32px;
@@ -34,11 +34,13 @@ body {
     flex-direction: column;
 }
 
-.botao {
-    font-family: 'Jacquard 12', sans-serif;
+.titulo-principal span {
+            color: var(--verde);
+}
+
+.botao { font-family: 'Jacquard 12', sans-serif;
     background-color: var(--botao-inativo);
-    color: var(--branco);
-    display: flex;
+    color: var(--branco); display: flex;
     justify-content: center;
     padding: 1em;
     font-size: 18px;
@@ -50,59 +52,62 @@ body {
     border-top: none;
 }
 
-.botao:first-child {
-    border-radius: 40px 40px 0 0;
+.botoes { display: block;
 }
 
-.botoes {
-    display: block;
+@media screen and (min-width: 768px) { .botoes { display: flex;
+}
+
+}
+
+.botao:first-child { border-radius: 40px 0 0 0;
+}
+
+.botao:last-child { border-radius: 0 40px 0 0;
 }
 
 .botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+    border-bottom: 4px solid var(--ciano);
 }
 
 .abas-textos{
-    background-color: var(--texto-fundo);
-    padding: 40px;
+    background-color: var(--texto-fundo); padding: 40px;
     border-radius: 0 0 40px 40px;
 }
 
-.botao.ativo{
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+.aba-conteudo.ativo{ display:block;
 }
 
-.aba-conteudo.ativo{
-         display:block;
+.aba-conteudo{ display: none;
 }
 
-.aba-conteudo{ 
-        display: none;
+.aba-conteudo-titulo-principal{ font-size: 28px;
+    text-align: center;
+    }
+
+.aba-conteudo-titulo-secundario{ text-align: center;
+    color: var(--verde); text-transform: uppercase;
 }
 
 .contador{
-    font-size: 40px;
-    text-align: center;
-    display: flex;
+    display:flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.contador-digito{
+.contador-digito{ 
     padding: 0 16px;
     text-align: center;
     min-width: 100px;
 }
 
-.contador-digito-numero{
-    font-size: 80px;
+.contador-digito-numero{ font-size: 80px;
     margin: 0;
 }
 
 .contador-digito-texto{
-    color: var(--verde);
-    font-size: 40px;
-    margin: 0;
+        color: var(--verde);
+        font-size: 20px;
+        margin: 0
 }
